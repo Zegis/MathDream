@@ -10,7 +10,7 @@ DreamGame.MainMenu.prototype = {
 	
 	create: function(){
 	
-		var button = this.game.add.button(this.game.world.centerX-95, this.game.world.centerY, 'button', changeState, this, 2, 1, 0);
+		var button = this.game.add.button(this.game.world.centerX-95, this.game.world.centerY -30, 'button', changeState, this);
 	
 	},
 	
