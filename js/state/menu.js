@@ -6,6 +6,8 @@ DreamGame.MainMenu.prototype = {
 
 	preload: function(){
 		this.game.load.spritesheet('button', 'assets/button.png', 193, 71);
+		this.game.load.spritesheet('hero','assets/hero.png',32,48);
+		this.game.load.image("bg","assets/bg.png");
 	},
 	
 	create: function(){
@@ -20,5 +22,6 @@ DreamGame.MainMenu.prototype = {
 
 function changeState(){
 	
-	this.game.state.start('Intro');
+	//this.game.state.start('Intro');
+	this.game.state.start('Gameplay');
 };
