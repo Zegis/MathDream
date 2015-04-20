@@ -29,15 +29,13 @@ DreamGame.Gameplay.prototype = {
 		if(this.cursors.left.isDown)
 		{
 			this.player.body.velocity.x = -150;
-			this.player.animations.play('right');
-			//this.player.animations.play('left');
+			this.player.animations.play('left');
 		}
 		else if(this.cursors.right.isDown)
 		{
 			this.player.body.velocity.x = 150;
 			
-			this.player.animations.play('left');
-			//this.player.animations.play('right');
+			this.player.animations.play('right');
 		}
 		else
 		{
@@ -59,7 +57,7 @@ DreamGame.Gameplay.prototype.prepareHero = function(){
 	this.game.physics.arcade.enable(this.player);
 	
 	this.player.body.bounce.y = 0;
-	this.player.body.gravity.y = 3;
+	this.player.body.gravity.y = 400;
 	this.player.body.collideWorldBounds = true;
 
 }
