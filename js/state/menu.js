@@ -24,5 +24,5 @@ DreamGame.MainMenu.prototype = {
 function changeState(){
 	
 	//this.game.state.start('Intro');
-	this.game.state.start('Gameplay');
+	this.game.state.start('Intro');
 };

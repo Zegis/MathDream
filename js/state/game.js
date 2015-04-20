@@ -59,7 +59,7 @@ DreamGame.Gameplay.prototype.prepareHero = function(){
 	this.game.physics.arcade.enable(this.player);
 	
 	this.player.body.bounce.y = 0;
-	this.player.body.gravity.y = 3;
+	this.player.body.gravity.y = 300;
 	this.player.body.collideWorldBounds = true;
 
 }
