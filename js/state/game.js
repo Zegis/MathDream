@@ -17,6 +17,7 @@ DreamGame.Gameplay.prototype = {
 		this.platforms.enableBody = true;
 		this.ground = this.platforms.create(0, game.world.height-60, 'ground');
 		this.ground.scale.setTo(2,1);
+		this.ground.body.immovable = true;
 		
 		this.cursors = game.input.keyboard.createCursorKeys();
 	},
