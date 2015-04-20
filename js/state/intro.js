@@ -12,7 +12,7 @@ DreamGame.Intro.prototype = {
 		this.current = 0;
 		
 		// Wariables for intro txt
-		var message = "- Go to sleep, son.\n You must rest before tomorrows\' math test!";
+		this.message = "- Go to sleep, son.\n You must rest before tomorrows\' math test!";
 		this.progress = ["\n\n - I don't want to go tomorrow! Math is stupid!", "\n All that subtraction, and addition, who needs it?",	"\n\n- It's not that stupid, son\n You'll need it to count many things, how many \n candies left...", "\n\n - Math has something to do with candies?\n Then'll learn it! :D", "\n\n- Good boy, nighty-night", "\n\n- Night, mummy!", "\n\n\n...\nzzZzz...", "\n\n...\n... ZzzzZZzz...\n...Candies...", "\n\n\n\n         Press any key to start dreaming..."];
 		
 		
@@ -38,8 +38,8 @@ DreamGame.Intro.prototype = {
 
 DreamGame.Intro.prototype.progressIntro = function () {
 
-	this.introTxt = this.game.add.bitmapText(25,25, 'font', message, 20);
-	message += this.progress[this.current];
+	this.introTxt = this.game.add.bitmapText(25,25, 'font', this.message, 20);
+	this.message += this.progress[this.current];
 	
 	if(this.current < this.progress.length)
 	{
